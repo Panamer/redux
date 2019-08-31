@@ -1,7 +1,8 @@
 /* config-overrides.js */
 const {
   override,
-  fdisableEsLint
+  disableEsLint,
+  overrideDevServer
 } = require("customize-cra");
 
 

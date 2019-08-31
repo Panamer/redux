@@ -1,3 +1,5 @@
+// 这是之前的写法，现在废弃了，改用renderRoutes
+
 import React from 'react'
 import { Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'

@@ -24,6 +24,7 @@ class Road extends React.Component{
       <div>
         <h2> this is road components {this.props.road.roadData} </h2>
         <button onClick={() => { this.props.addRoad() }}>加一个</button>
+        <button onClick={() => { this.props.history.push('/winter') }}>jump</button>
       </div>
     )
   }
