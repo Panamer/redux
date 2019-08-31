@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import propTypes from 'prop-types'
-import { addRoad } from '../../rootReducers/roadReducer'
+import { addRoad } from '../../reducers/roadReducer'
 
 const mapStateToProps = (state, ownProp) => {
   return ({
