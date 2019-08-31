@@ -1,4 +1,4 @@
-import { combineReducers, createStore } from 'redux'
+import { combineReducers } from 'redux'
 import { roadReducer as roadState} from './roadReducer'
 import { windReducer as windState } from './windReducer'
 
@@ -9,12 +9,4 @@ const rootReducer = combineReducers({
   windState
 })
 
-// 创建store来存放应用中所有的state，内部维护的方法：getState、dispatch、replaceReducer、subscribe
-const store = createStore(rootReducer)
-
-// 监听store的变化
-store.subscribe(() => {
-  console.log(store.getState())
-})
-
-export default store
+export default rootReducer
