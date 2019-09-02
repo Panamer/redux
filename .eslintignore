@@ -1,0 +1,9 @@
+/node_modules
+public/*.js
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+config-overrides.js
+prettier.config.js
