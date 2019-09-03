@@ -1,7 +1,7 @@
 /* config-overrides.js */
 const {
   override,
-  disableEsLint,
+  useEslintRc,
   overrideDevServer
 } = require("customize-cra");
 
@@ -9,7 +9,7 @@ const {
 module.exports = {
   webpack: override(
     // usual webpack plugin
-    disableEsLint()
+    useEslintRc()
   ),
   devServer: overrideDevServer(config => {
     config.proxy = {

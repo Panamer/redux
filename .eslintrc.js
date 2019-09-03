@@ -4,7 +4,8 @@ module.exports = {
 		'node': true,
 		'es6': true
 	},
-	'extends': ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+	'extends': ["airbnb", "airbnb/hooks"],
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly'
@@ -37,6 +38,7 @@ module.exports = {
 		'semi': [
 			'error',
 			'always'
-		]
+		],
+    "no-console": 1,
 	}
 };

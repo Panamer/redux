@@ -7,3 +7,4 @@ public/*.js
 .gitignore
 config-overrides.js
 prettier.config.js
+/src/serviceWorker.js
