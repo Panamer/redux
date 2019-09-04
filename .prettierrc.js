@@ -1,9 +1,12 @@
 // https://prettier.io/docs/en/options.html  api文档
+// https://juejin.im/post/5b27a326e51d45588a7dac57
+// 格式化代码样式
+
 module.exports = {
   printWidth: 80, // 一行的字符数，如果超过会进行换行，默认为80
   tabWidth: 2, // 一个tab代表几个空格	默认2
   useTabs: true, // 缩进用tab代替空格 默认false
-  semi: true, // 行末加分号	默认true
+  semi: false, // 行末加分号	默认true
   singleQuote: true, // 用单引号代替双引号	默认false
   jsxSingleQuote: false, // 在jsx中 用单引号代替双引号 默认false
   trailingComma: 'none', //是否使用尾逗号，有三个可选值"<none|es5|all>"

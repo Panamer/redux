@@ -1,11 +1,11 @@
 // router
-import Loadable from 'react-loadable';
-import MyLoadingComponent from '../../components/LoadingComponent';
+import Loadable from 'react-loadable'
+import MyLoadingComponent from '../../components/LoadingComponent'
 
 const Winter = Loadable({
 	loader: () => import('./index'),
 	loading: MyLoadingComponent
-});
+})
 
 export default [
 	{
@@ -16,4 +16,4 @@ export default [
 		},
 		component: Winter
 	}
-];
+]

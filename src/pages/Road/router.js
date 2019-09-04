@@ -1,11 +1,11 @@
 // router
-import Loadable from 'react-loadable';
-import MyLoadingComponent from '../../components/LoadingComponent';
+import Loadable from 'react-loadable'
+import MyLoadingComponent from '../../components/LoadingComponent'
 
 const Road = Loadable({
 	loader: () => import('./index'),
 	loading: MyLoadingComponent
-});
+})
 
 const router = [
 	{
@@ -16,6 +16,6 @@ const router = [
 		},
 		component: Road
 	}
-];
+]
 
-export default router;
+export default router

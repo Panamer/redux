@@ -1,3 +1,5 @@
+// 校验代码逻辑
+
 module.exports = {
 	'root': true,
 	'env': {

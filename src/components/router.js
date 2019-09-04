@@ -1,19 +1,19 @@
 // 这是之前的写法，现在废弃了，改用renderRoutes
 
-import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-import Loadable from 'react-loadable';
-import MyLoadingComponent from './LoadingComponent';
+import React from 'react'
+import { Router, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
+import Loadable from 'react-loadable'
+import MyLoadingComponent from './LoadingComponent'
 
-import Wind from './Wind/index';
+import Wind from './Wind/index'
 
 const Road = Loadable({
 	loader: () => import('./Road'),
 	loading: MyLoadingComponent
-});
+})
 
-const browserHistory = createBrowserHistory();
+const browserHistory = createBrowserHistory()
 
 const BasicRoute = () => (
   <Router history={browserHistory}>
@@ -22,6 +22,6 @@ const BasicRoute = () => (
   <Route path="/" component={Wind} />
 		</Switch>
 	</Router>
-);
+)
 
-export default BasicRoute;
+export default BasicRoute
