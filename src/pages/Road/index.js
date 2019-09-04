@@ -20,25 +20,21 @@ class Road extends React.Component {
 
 	render() {
 		return (
-  <div>
+			<div>
 				<h2>
-      {' '}
 					this is road components
-      {this.props.road.roadData}
-      {' '}
-    </h2>
+					{this.props.road.roadData}
+				</h2>
 				<button
-      onClick={() => {
+					onClick={() => {
 						this.props.addRoad()
-					}}
-    >
+					}}>
 					加一个
-    </button>
-  <button
-  onClick={() => {
+				</button>
+				<button
+					onClick={() => {
 						this.props.history.push('/winter')
-					}}
-				>
+					}}>
 					jump
 				</button>
 			</div>

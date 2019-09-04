@@ -12,9 +12,9 @@ class Wind extends React.Component {
 
 	render() {
 		return (
-  <div>
-  <p>this is big wind 呼呼呼</p>
-  <button onClick={this.locationChange}>跳转</button>
+			<div>
+				<p>this is big wind 呼呼呼</p>
+				<button onClick={this.locationChange}>跳转</button>
 			</div>
 		)
 	}
