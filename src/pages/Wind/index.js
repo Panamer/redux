@@ -20,5 +20,4 @@ class Wind extends React.Component {
 	}
 }
 
-
 export default Wind;

@@ -10,5 +10,4 @@ store.subscribe(() => {
 
 export default store;
 
-
 // 推荐文档 https://blog.csdn.net/weixin_33739646/article/details/87961212

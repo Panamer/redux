@@ -6,11 +6,8 @@ import routes from './router.config';
 
 const browserHistory = createBrowserHistory();
 
-
 const BasicRoute = () => (
-  <Router history={browserHistory}>
-  {renderRoutes(routes)}
-	</Router>
+  <Router history={browserHistory}>{renderRoutes(routes)}</Router>
 );
 
 export default BasicRoute;

@@ -1,15 +1,19 @@
 module.exports = {
+	'root': true,
 	'env': {
 		'browser': true,
 		'node': true,
 		'es6': true
 	},
-  "parser": "babel-eslint",
-	'extends': ["airbnb", "airbnb/hooks"],
+	'extends': [
+    'airbnb',
+    'plugin:prettier/recommended'
+  ],
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly'
 	},
+  'parser': 'babel-eslint',
 	'parserOptions': {
 		'ecmaFeatures': {
 			'jsx': true
@@ -22,23 +26,6 @@ module.exports = {
 		'prettier'
 	],
 	'rules': {
-		'prettier/prettier': 'error',
-		'indent': [
-			'error',
-			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'unix'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'always'
-		],
-    "no-console": 1,
+		'prettier/prettier': 'error'
 	}
 };
