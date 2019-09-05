@@ -2,6 +2,7 @@
 // https://github.com/airbnb/javascript/tree/master/react
 
 console.log(process.env.NODE_ENV);
+
 module.exports = {
 	'root': true,
 	'env': {
