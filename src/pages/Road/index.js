@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { addRoad } from '../../reducers/roadReducer';
+import { addRoad } from '../../reducers/roadReducer'
 
 const mapStateToProps = state => {
 	return {
@@ -13,16 +13,16 @@ const mapDispatchToProps = {
 	addRoad
 }
 
+const propTypes = {
+	roadData: PropTypes.number.isRequired,
+	addRoad: PropTypes.func.isRequired
+}
+
 class Road extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {}
-	};
-
-  let propTypes = {
-  	roadData: PropTypes.number.isRequired,
-  	addRoad: PropTypes.func.isRequired
-  }
+	}
 
 	componentDidMount() {}
 

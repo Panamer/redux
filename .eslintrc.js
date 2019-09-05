@@ -1,5 +1,5 @@
 // 校验代码逻辑
-// https://juejin.im/entry/5889757e128fe10068532c1c
+// airbib规则 https://juejin.im/entry/5889757e128fe10068532c1c
 module.exports = {
 	'root': true,
 	'env': {
@@ -24,6 +24,7 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'plugins': [
+    'react'
 		'prettier'
 	],
 	'rules': {
