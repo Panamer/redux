@@ -1,5 +1,7 @@
-// 校验代码逻辑
-// airbib规则 https://juejin.im/entry/5889757e128fe10068532c1c     https://github.com/airbnb/javascript/tree/master/react
+// airbib规则 校验代码逻辑 https://juejin.im/entry/5889757e128fe10068532c1c
+// https://github.com/airbnb/javascript/tree/master/react
+
+console.log(process.env.NODE_ENV);
 module.exports = {
 	'root': true,
 	'env': {
