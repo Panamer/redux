@@ -1,5 +1,5 @@
 // 校验代码逻辑
-// airbib规则 https://juejin.im/entry/5889757e128fe10068532c1c
+// airbib规则 https://juejin.im/entry/5889757e128fe10068532c1c     https://github.com/airbnb/javascript/tree/master/react
 module.exports = {
 	'root': true,
 	'env': {
@@ -24,7 +24,7 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'plugins': [
-    'react'
+    'react',
 		'prettier'
 	],
 	'rules': {
@@ -35,7 +35,7 @@ module.exports = {
     'react/destructuring-assignment': [0, 'always'],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-indent": [ 2, "tab" ],
-    "react/jsx-indent-props": [ 2, "tab" ],
+    "no-console": process.env.NODE_ENV === 'development' ? "off" : "warn",
     "react/button-has-type": [0, 'always']
 	}
 };
