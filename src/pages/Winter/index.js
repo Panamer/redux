@@ -1,10 +1,6 @@
 import React from 'react'
 
 class Wind extends React.Component {
-	constructor(props) {
-		super(props)
-	}
-
 	locationChange = () => {
 		this.props.history.push('/road')
 	}

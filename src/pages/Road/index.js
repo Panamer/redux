@@ -1,11 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import propTypes from 'prop-types'
-import { addRoad } from '../../reducers/roadReducer'
+import PropTypes from 'prop-types'
+import { addRoad } from '../../reducers/roadReducer';
 
-const mapStateToProps = (state, ownProp) => {
+const mapStateToProps = state => {
 	return {
-		road: state.roadState
+		roadData: state.roadState.roadData
 	}
 }
 
@@ -14,8 +14,20 @@ const mapDispatchToProps = {
 }
 
 class Road extends React.Component {
-	static propTypes = {
-		road: propTypes.object
+	constructor(props) {
+		super(props)
+		this.state = {}
+	};
+
+  let propTypes = {
+  	roadData: PropTypes.number.isRequired,
+  	addRoad: PropTypes.func.isRequired
+  }
+
+	componentDidMount() {}
+
+	jump() {
+		this.props.history.push('/winter')
 	}
 
 	render() {
@@ -23,24 +35,16 @@ class Road extends React.Component {
 			<div>
 				<h2>
 					this is road components
-					{this.props.road.roadData}
+					{this.props.roadData}
 				</h2>
-				<button
-					onClick={() => {
-						this.props.addRoad()
-					}}>
-					加一个
-				</button>
-				<button
-					onClick={() => {
-						this.props.history.push('/winter')
-					}}>
-					jump
-				</button>
+				<button onClick={this.props.addRoad.bind(this)}>加一个</button>
+				<button onClick={this.jump.bind()}>jump</button>
 			</div>
 		)
 	}
 }
+
+Road.propTypes = propTypes
 
 export default connect(
 	mapStateToProps,

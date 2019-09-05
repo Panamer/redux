@@ -14,7 +14,9 @@ class Wind extends React.Component {
 		return (
 			<div>
 				<p>this is big wind 呼呼呼</p>
-				<button onClick={this.locationChange}>跳转</button>
+				<button type="button" onClick={this.locationChange}>
+					跳转
+				</button>
 			</div>
 		)
 	}
