@@ -3,9 +3,9 @@
  */
 let baseURL
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.REACT_APP_ENV === 'production') {
 	baseUrl = 'production'
-} else if (process.env.NODE_ENV === 'development') {
+} else if (process.env.REACT_APP_ENV === 'development') {
 	baseURL = 'development'
 } else {
 	baseURL = 'http://localhost:3000'

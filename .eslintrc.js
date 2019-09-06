@@ -1,9 +1,6 @@
 // airbib规则 校验代码逻辑 https://juejin.im/entry/5889757e128fe10068532c1c
 // https://github.com/airbnb/javascript/tree/master/react
 
-console.log(process.env.NODE_ENV);
-console.log(process.env.REACT_APP_ENV);
-
 module.exports = {
 	'root': true,
 	'env': {
@@ -39,7 +36,7 @@ module.exports = {
     'react/destructuring-assignment': [0, 'always'],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-indent": [ 2, "tab" ],
-    "no-console": process.env.NODE_ENV === 'development' ? "off" : "warn",
+    "no-console": process.env.REACT_APP_ENV === 'development' ? "off" : "warn",
     "react/button-has-type": [0, 'always']
 	}
 };
