@@ -13,7 +13,7 @@ module.exports = {
   ),
   devServer: overrideDevServer(config => {
     config.proxy = {
-      '/smcAdmin': {
+      '/api': {
         target: '/',
         changeOrigin: true
         // pathRewrite: {

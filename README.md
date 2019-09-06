@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run: yarn add
 
 ### `npm start`
 
@@ -67,5 +67,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+工程是基于CRA创建，丰富了路由懒加载、全局状态管理、api封装
+使用react5.0结合react-loadable实现按需加载
+使用airbnb作为eslint校验规则标准
+使用prettier格式化代码样式
+使用react-app-rewired重写webpack配置
+使用env-cmd配置不同的环境变量
 
 https://juejin.im/post/5c6b9cde5188252d564266ee
