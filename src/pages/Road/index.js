@@ -35,10 +35,10 @@ class Road extends React.Component {
 			<div>
 				<h2>
 					this is road components
-					{this.props.roadData}
+					{` ${this.props.roadData}`}
 				</h2>
 				<button onClick={this.props.addRoad.bind(this)}>加一个</button>
-				<button onClick={this.jump.bind()}>jump</button>
+				<button onClick={this.jump.bind(this)}>jump</button>
 			</div>
 		)
 	}
