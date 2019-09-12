@@ -1,10 +1,17 @@
 // constants action类型
 const ADDROAD = 'ADDROAD'
+const REPLACE = 'REPLACE'
 
 // action creator 必须有一个type字段来标识这个行为的类型
 export function addRoad(state) {
 	return {
 		type: ADDROAD,
+		payload: state
+	}
+}
+export function replace(state) {
+	return {
+		type: REPLACE,
 		payload: state
 	}
 }
@@ -22,10 +29,10 @@ export function roadReducer(state = initialState, action) {
 				...state,
 				roadData: state.roadData + 1
 			}
-		case 'REMOVE':
+		case REPLACE:
 			return {
 				...state,
-				roadData: state.roadData - 1
+				roadData: action.payload
 			}
 		default:
 			return state

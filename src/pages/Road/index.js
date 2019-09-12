@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { addRoad } from '../../reducers/roadReducer'
+import { addRoad, replace } from '../../reducers/roadReducer'
+import './index.css'
 
 const mapStateToProps = state => {
 	return {
@@ -10,7 +11,8 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = {
-	addRoad
+	addRoad,
+	replace
 }
 
 const propTypes = {
@@ -22,9 +24,14 @@ class Road extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {}
+		this.handleChange = this.handleChange.bind(this)
 	}
 
 	componentDidMount() {}
+
+	handleChange(event) {
+		this.props.replace(Number(event.target.value))
+	}
 
 	jump() {
 		this.props.history.push('/winter')
@@ -33,6 +40,12 @@ class Road extends React.Component {
 	render() {
 		return (
 			<div>
+				<input
+					type="text"
+					value={this.props.roadData}
+					onChange={this.handleChange}
+					className="el-input"
+				/>
 				<h2>
 					this is road components
 					{` ${this.props.roadData}`}

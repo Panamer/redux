@@ -36,6 +36,7 @@ module.exports = {
     'react/destructuring-assignment': [0, 'always'],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-indent": [ 2, "tab" ],
+		"react/jsx-indent-props": [0, 'always'],
     "no-console": process.env.REACT_APP_ENV === 'development' ? "off" : "warn",
     "react/button-has-type": [0, 'always']
 	}
